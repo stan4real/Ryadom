@@ -23,29 +23,29 @@ const queryClient = new QueryClient({
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ryadom/",
     element: <Root/>,
     errorElement:<ErrorPage/>,
     children: [
       {
-        path:'home',
+        path:'/ryadom/',
         element:<Home/>
       }
       ,
       {
-        path: "allcats",
+        path: "/ryadom/allcats",
         element: <App />,
       },
       {
-        path:"favorites",
+        path:"/ryadom/favorites",
         element:<Favorites/>
       },
       {
-        path:"posts",
+        path:"/ryadom/posts",
         element:<Posts/>
       },
       {
-        path:"posts/:postId",
+        path:"/ryadom/posts/:postId",
         element:<PostPage/>
       }
     ],
