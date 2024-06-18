@@ -1,0 +1,128 @@
+.container{
+    width: 100%;
+    padding-top: 10vh;
+    height:60vh;
+    padding-bottom: 20vh;
+    display: flex;
+}
+.previewText {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: flex-start;
+  justify-content: center;
+  width: 52%;
+  padding-left: 5%;
+}
+.heading{
+    color:var(--color-blue);
+    font-size: 4em;
+    text-align:left
+}
+.btnPreview{
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    color: #fff;
+    background-color: var(--color-violet);
+    width: 13em;
+    height: 3em;
+    padding-right: 2em;
+}
+.previewImages{
+    width: 48%;
+    position: relative;
+    color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+}
+.gretaPreviewCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 4%;
+}
+.gretaPreviewCatBG{
+    height: 32em;
+    width: 21em;
+    border-radius: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/сиамский кот.jpeg');
+}
+.jackPreviewCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -10%;
+    right: 15%;
+}
+.jackPreviewDogBG{
+    background-image: url('/jack.jpg');
+    border-radius: 25em;
+    height: 25em;
+    width: 15em;
+    background-position-x: right ;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.heartPreview{
+    position: absolute;
+    bottom: -15%;
+    right: 35%;
+    
+}
+@media (max-width:1382px) {
+    .jackPreviewCard{
+        display: none;
+    }
+    .heartPreview{
+        display: none;
+    }
+    .gretaPreviewCard{
+        left: 30%;
+        height: 100%;
+        width: 50%;
+    }
+}
+@media (max-width:958px) {
+    .previewText {
+        font-size: 0.6em;
+    }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 0;
+    }
+    .previewText{
+        width: 100%;
+        align-items: center;
+    }
+    .previewImages{
+        display: none;
+    }
+}
+@media (max-width:740px) {
+    .previewText {
+        font-size: 0.5em;
+      }
+      .gretaPreviewCard{
+        left: 30%;
+        height: 70%;
+        width: 30%;
+    }
+    .previewText{
+        width: 70%;
+      }
+}
+@media(max-width:526px){
+    .container{
+        height: 80vh;
+    }
+}

@@ -1,0 +1,45 @@
+.postItem{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    padding: 1em;
+    border-top: 5px solid var(--color-cyan);
+    overflow: hidden;
+}
+.postItem:hover{
+    cursor: pointer;
+    transition: border 0.2s ease;
+}
+.postItem .image{
+    width: 35%;
+    height: 100%;
+    border-radius: 25em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.postItem .text{
+    width: 65%;
+    height: 90%;
+    padding-bottom: 10%;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    
+}
+.text > h1 {
+    color: var(--color-blue);
+    text-align: left;
+}
+.text > p{
+    color: black;
+    text-align: justify;
+}
+@media (max-width:826px) {
+    .text > p {
+        display: none;
+    }
+    .text > h1 {
+        text-align: center;
+    }
+}

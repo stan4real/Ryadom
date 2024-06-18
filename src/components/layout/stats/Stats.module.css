@@ -1,0 +1,222 @@
+.container{
+    margin-top: 3em;
+    width: 100%;
+    min-height: 140vh;
+    max-height: 400vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+.stats{
+    height: 70vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    padding: 0 10% 0 10%;
+    gap: 5%;
+}
+.statsCard{
+    height: 70vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.digits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 15vw;
+    background-color: var(--color-redberry);
+    border-radius: 25em;
+    color: #fff;
+}
+.text{
+    text-align: center;
+    font-size: large;
+}
+.text > h2{
+    color: var(--color-redberry);
+    font-style: italic;
+}
+.text > h3{
+    color: var(--color-blue);
+}
+.catFace{
+    width: 10em;
+    height: 10em;
+    background-image: url('/кот вектор.png');
+    pointer-events: none;
+    background-size: cover;
+    margin-top: 2em;
+}
+.dogFace{
+    width: 8em;
+    height: 10em;
+    margin-top: 1em;
+    background-image: url('/собака вектор.png');
+    pointer-events: none;
+    background-size: cover;
+}
+.badGuy{
+    width: 9em;
+    height: 10em;
+    background-image: url('/злодей.png');
+    pointer-events: none;
+    background-size: cover;
+}
+.couple{
+    width: 8em;
+    height: 10.5em;
+    background-image: url('/пара.png');
+    pointer-events: none;
+    background-size: cover;
+}
+.article{
+    width: 65%;
+    padding: 0 10% 2% 10%;
+    height: 40vh;
+    text-align: center;
+    background-color: var(--color-cyan);
+    border-radius: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-blue);
+    font-size: medium;
+}
+.article >  h1 > span {
+    color: #fff;
+    font-style: italic;
+}
+
+@media (max-width:1336px){
+    .article{
+        font-size: small;
+    }
+    .stats{
+        height: 160vh;
+        align-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4em;
+    }
+    .digits h1{
+        font-size: 38px;
+    }
+
+}
+@media(max-width:1000px){
+    .digits h1 {
+        font-size: 32px;
+    }
+    .catFace{
+        width: 7em;
+        height: 7em;
+    }
+    .dogFace{
+        width: 7.1em;
+        height: 9em;
+    }
+    .badGuy{
+        width: 7.2em;
+        height: 8em;
+    }
+    .couple{
+        width: 6em;
+        height: 8em;
+    }
+}
+@media(max-width:750px){
+    .digits h1 {
+        font-size: 28px;
+    }
+    .catFace{
+        width: 6em;
+        height: 6em;
+    }
+    .dogFace{
+        width: 6.1em;
+        height: 7.7em;
+    }
+    .badGuy{
+        width: 6.2em;
+        height: 7em;
+    }
+    .couple{
+        width: 5.3em;
+        height: 7em;
+    }
+    .article{
+        height: 52vh;
+    }
+    .article h1{
+        font-size: 34px;
+    }
+    .article p{
+        font-size: 14px;
+    }
+}
+@media(max-width:600px){
+    .statsCard{
+        width: 25vw;
+    }
+    .digits{
+        width: 20vw;
+    }
+    .digits h1 {
+        font-size: 24px;
+    }
+    .catFace{
+        width: 6em;
+        height: 6em;
+    }
+    .dogFace{
+        width: 6.1em;
+        height: 7.7em;
+    }
+    .badGuy{
+        width: 6.2em;
+        height: 7em;
+    }
+    .couple{
+        width: 4.8em;
+        height: 6.8em;
+    }
+    .article{
+        height: 90vh;
+        border-radius: 0;
+    }
+    .article h1{
+        font-size: 34px;
+    }
+    .article p{
+        font-size: 14px;
+    }
+}
+@media(max-width:425px){
+    .container{
+        max-height: 1200vh;
+    }
+    .stats{
+        height: 300vh;
+        gap: 1em;
+    }
+    .statsCard{
+        flex-direction: row;
+        width: 100%;
+        height: 60vh;
+        gap:10px;
+        justify-content: flex-start;
+    }
+    .digits{
+        width: 30vw;
+        height: 50vh;
+    }
+}

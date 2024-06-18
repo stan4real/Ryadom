@@ -1,0 +1,275 @@
+.container{
+    width: 100%;
+    height: 110vh;
+    max-height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+.bigCard{
+    width: 60%;
+    height: 100%;
+    background-color: var(--color-redberry);
+    position: relative;
+    overflow: hidden;
+}
+.cat{
+    height: 100%;
+    width: 80%;
+    background-image: url('/кот.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+}
+.heading{
+    font-size: 4em;
+    line-height: 1.5em;
+    margin-right: 2em;
+    text-align: right;
+    color: #fff;
+}
+.nomer1{
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.buttons{
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 600;
+    gap: 1em;
+}
+.buttonsCon{
+    display: flex;
+    gap: 1em;
+}
+.btnsHeading{
+    font-size:4em;
+    font-weight:600;
+
+}
+.btn{
+    height: max-content;
+    background-color: var(--color-violet);
+    color: #fff;
+    margin-top: 2%;
+}
+.btn:hover{
+    border-color: #fff;
+}
+.paw1{
+    position: absolute;
+    bottom: -5%;
+    right: 0;
+}
+.paw2{
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: rotate(-60deg);
+}
+.miniCards{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.miniCardFood{
+    background-color: rgb(102, 191, 255);
+    height: 33.4%;
+    position: relative;
+    overflow: hidden;
+}
+.miniCardFoodOne{
+    height: 100%;
+    width: 50%;
+    background-image: url('/японские лакомства для котят.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+}
+.miniCardFoodTwo{
+    height: 100%;
+    width: 50%;
+    background-image: url('/японские лакомства для котят.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: -15%;
+    transform: rotate(30deg);
+}
+.miniCardShampoos{
+    background-color: var(--color-cyan);
+    height: 33.3%;
+    background-image: url('/крем для животных.png');
+    background-size: 80% 160%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+   }
+.miniCardDrugs{
+    background-color: var(--color-yellow);
+    height: 33.3%;
+    background-image: url('/один крем.png');
+    background-size: 40% 120%;
+    background-repeat: no-repeat;
+    background-position: center top;
+   }
+@media(max-width:1200px){
+    .container{
+        flex-direction: column;
+        min-height: 220vh;
+        justify-content: center;
+    }
+    .bigCard{
+        width: 100%;
+        height: 100%;
+    }
+    .miniCards{
+        width: 100%;
+        flex-direction: row;
+        height: 100vh;
+        
+    }
+    .miniCardFood{
+        height: 100%;
+        width: 33%;
+    }
+    .miniCardFoodOne{
+        width: 70%;
+        left: 0;
+    }
+    .miniCardFoodTwo{
+        width: 70%;
+        left: 30%;
+    }
+    .miniCardShampoos{
+        height: 100%;
+        width: 34%;
+        background-size: 100% 150%;
+    }
+    .miniCardDrugs{
+        height: 100%;
+        width: 33%;
+        background-size: 40% 90%;
+        background-position: center bottom;
+    }
+}
+@media(max-width:668px){
+    .container{
+        flex-direction: column;
+        min-height: 400vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .cat{
+        width: 70%;
+        height: 70%;
+        left: 10%;
+    }
+    .paw2{
+        top: 10%;
+    }
+    .btnsHeading{
+        font-size: 4em;
+        color: rgb(247, 163, 247);
+    }
+    .bigCard{
+        width: 100%;
+        height: 110vh;
+    }
+    .miniCards{
+        width: 100%;
+        flex-direction: column;
+        height: 300vh;
+    }
+    .miniCardFood{
+        width: 100%;
+        height: 110vh;
+    }
+    .miniCardFoodOne{
+        width: 100%;
+        height: 80%;
+        left: 0;
+    }
+    .miniCardFoodTwo{
+        width: 80%;
+        left: 30%;
+        transform: rotate(-45deg);
+    }
+    .miniCardShampoos{
+        height: 110vh;
+        width: 100%;
+        background-size: 100% 120%;
+    }
+    .miniCardDrugs{
+        height: 110vh;
+        width: 100%;
+        background-size: 40% 80%;
+        background-position: center bottom;
+    }
+}
+@media(max-width:533px){
+    .container{
+        min-height: 280vh;
+    }
+    .cat{
+        width: 100%;
+        height: 56%;
+        left: 40%;
+    }
+    .heading{
+        font-size: 34px;
+    }
+    .btnsHeading{
+        font-size: 3em;
+    }
+    .paw2{
+        display: none;
+    }
+    .miniCards{
+        height: 150vh;
+    }
+    .miniCardFood{
+        height: 50vh;
+    }
+    .miniCardFoodOne{
+        left:-20%;
+        width: 100%;
+        height: 100%;
+    }
+    .miniCardFoodTwo{
+        width: 100%;
+        height: 100%;
+        left: 30%;
+        transform: rotate(-45deg);
+    }
+    .miniCardShampoos{
+        height: 50vh;
+        background-size: 100% 110%;
+    }
+    .miniCardDrugs{
+        height: 50vh;
+        background-position: center center;
+        background-size: contain;
+    }
+    .buttons{
+        bottom: 20%;
+    }
+    .buttonsCon{
+        flex-wrap: wrap;
+    }
+}

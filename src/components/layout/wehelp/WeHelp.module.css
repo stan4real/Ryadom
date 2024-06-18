@@ -1,0 +1,152 @@
+.container{
+    width: 100%;
+    height:130vh;
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    overflow: hidden;
+    position: relative;
+}
+.secContainer {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+}
+.weHelpCat {
+    border-radius: 25em;
+    width: 14em;
+    height: 100%;
+    background-image: url('/Кот и миска корма.png');
+    background-position: center;
+    background-size: cover;
+    
+}
+.weHelpDog{
+    border-radius: 25em;
+    width: 50%;
+    height: 14em;
+    background-image: url('/Кот и миска корма.png');
+    background-position: bottom;
+    background-size: cover;
+}
+.weHelpParagraph{
+    width: 80%;
+    padding: 2em  0 2em 0;
+}
+.weHelpCatHeader{
+    text-align: left;
+    color: var(--color-blue);
+}
+.neMozhet{
+    color: var(--color-cyan);
+    font-style: oblique;
+    
+}
+.purplePaw{
+    position: absolute;
+    top: 45%;
+    right: -2em;
+    pointer-events: none;
+}
+.weHelpLink{
+    display: flex;
+    width: 80vw;
+}
+.knowMore{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: large;
+    font-style: italic;
+    text-decoration: underline;
+    color: var(--color-redberry);
+}
+.knowMore:hover{
+    color: #f95871;
+    transition: color 0.3s ease-in-out;
+}
+@media(max-width:1200px){
+    .container{
+        padding-top: 6em;
+    }
+    .weHelpCat{
+        height: 70%;
+    }
+}
+@media(max-width:950px){
+    .container{
+        height: 150vh;
+        font-size: small;
+    }
+    .weHelpCat{
+        height: 70%;
+    }
+}
+@media(max-width:840px){
+    .container{
+        height: 190vh;
+        padding-top: 0;
+    }
+    .weHelpParagraph{
+        font-size: 16px;
+        text-align: justify;
+    }
+    .weHelpCatHeader{
+        font-size: 30px;
+    }
+    .weHelpCat{
+        height: 70%;
+    }
+    .weHelpDog{
+        height: 70%;
+        align-self: center;
+    }
+    .purplePaw{
+        z-index: -1;
+    }
+    .knowMore{
+        font-size: 14px;
+    }
+    .container{
+        gap: 0;
+    }
+}
+@media(max-width:715px){
+    .container{
+        height: 220vh;
+    }
+}
+@media(max-width:628px){
+    .container{
+        height: 180vh;
+    }
+    .weHelpParagraph{
+        width: 100%;
+    }
+    .weHelpCat{
+        display: none;
+    }
+    .weHelpDog{
+        display: none;
+    }
+}
+@media(max-width:520px){
+    .container{
+        height: 190vh;
+    }
+    .weHelpParagraph{
+        font-size: 14px;
+    }
+    .knowMore{
+        font-size: 12px;
+    }
+    .weHelpCatHeader{
+        text-align: left;
+    }
+}
