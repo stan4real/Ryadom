@@ -23,7 +23,7 @@ const PostData = [{
 
 
 export default function Posts() {
-    const {isLoading, error, data} = useQuery({ 
+    const {data} = useQuery({ 
         queryKey: ['allcats'], 
         queryFn: ()=> PostService.getPosts(),
         select:({data}) => data,
