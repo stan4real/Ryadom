@@ -7,7 +7,7 @@ const TopMenu = () => {
   return (
 <div className={styles.navBar}>
     <nav className={styles.navMenu}>
-        <Link to={'/ryadom/home'} className={styles.brand}>
+        <Link to={'/ryadom/'} className={styles.brand}>
             <Logo/>
         </Link>
         <div>
