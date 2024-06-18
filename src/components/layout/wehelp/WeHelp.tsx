@@ -27,7 +27,7 @@ const WeHelp = () => {
           <div className={style.weHelpDog}/>
         </div>
         <div className={style.weHelpLink}>
-          <Link to={'/posts'} className={style.knowMore}>
+          <Link to={'/ryadom/posts'} className={style.knowMore}>
           <h2>
             узнайте больше в статьях
           </h2>

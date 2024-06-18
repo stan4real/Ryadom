@@ -7,7 +7,7 @@ const TopMenu = () => {
   return (
 <div className={styles.navBar}>
     <nav className={styles.navMenu}>
-        <Link to={'/home'} className={styles.brand}>
+        <Link to={'/ryadom/home'} className={styles.brand}>
             <Logo/>
         </Link>
         <div>
@@ -19,7 +19,7 @@ const TopMenu = () => {
             <div className={styles.links}>
             <li>
                     <NavLink 
-                    to={`/allcats`} 
+                    to={`/ryadom/allcats`} 
                     className={styles.link}
                     style={({ isActive, isTransitioning }) => {
                         return {
@@ -31,7 +31,7 @@ const TopMenu = () => {
                 </li>
                 <li>
                     <NavLink 
-                    to={`/favorites`} 
+                    to={`/ryadom/favorites`} 
                     className={styles.link}
                     style={({ isActive, isTransitioning }) => {
                         return {
@@ -43,7 +43,7 @@ const TopMenu = () => {
                 </li>
                 <li>
                     <NavLink 
-                    to={`/posts`} 
+                    to={`/ryadom/posts`} 
                     className={styles.link}
                     style={({ isActive, isTransitioning }) => {
                         return {
